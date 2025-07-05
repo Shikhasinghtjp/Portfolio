@@ -5,8 +5,14 @@ import Typewriter from "typewriter-effect";
 import HeroImg from '../../images/shikha.jpg';
 import HeroBgAnimation from "../HeroBgAnimation";
 import Tilt from "react-parallax-tilt";
-import motion from 'framer-motion';
-import {headContainerMotion} from '../../utils/motion';
+import {motion} from 'framer-motion';
+import {
+  headContainerAnimation,
+  headContentAnimation,
+  headTextAnimation
+} from '../../utils/motion';
+import StyledStarsCanvas from "../canvas/Stars";
+
 
 const HeroContainer = styled.div`
  display: flex;
@@ -23,7 +29,7 @@ const HeroContainer = styled.div`
   padding: 32px 16px;
  }
 
- clip-path: polygon(0 0,100% 0, 100% 100%, 70% 95%, 0 100%)
+ clip-path: polygon(0 0,100% 0, 100% 100%, 70% 95%, 0 100%);
 
 `;
 const HeroInnerContainer = styled.div`
@@ -47,7 +53,6 @@ gap: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 `;
 const HeroRightContainer = styled.div`
 width: 100%;
@@ -69,7 +74,7 @@ justify-content: end;
 `;
 
 const Title=styled.div`
-font-weight: 700px;
+font-weight: 700;
 font-size: 50px;
 color: ${({theme}) => theme.text_primary};
 line-height: 68px;
@@ -86,7 +91,7 @@ margin-bottom: 24px;
   }`;
 
 const TextLoop=styled.div`
-font-weight: 600px;
+font-weight: 600;
 font-size: 32px;
 display: flex;
 gap: 12px;
@@ -109,7 +114,7 @@ const Span=styled.div`
   color: ${({theme}) => theme.primary};
   `;
 const SubTitle=styled.div`
-font-weight: 400px;
+font-weight: 400;
 font-size: 18px;
 color: ${({theme}) => theme.text_primary + 95};
 line-height: 32px;
@@ -155,8 +160,7 @@ text-decoration: none;
   );
   box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
   border-radius: 50px;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 600  font-size: 20px;
 
      &:hover {
         transform: scale(1.05);
@@ -212,13 +216,17 @@ const HeroBg = styled.div`
 const Hero = () => {
     return <div id="about">
         <HeroContainer>
-            <HeroBg><HeroBgAnimation/></HeroBg>
+            <HeroBg>
+              <StyledStarsCanvas/>
+              <HeroBgAnimation/>
+              </HeroBg>
 
-            <motion.div {...headContainerMotion}>
+            <motion.div  {...headContainerAnimation}>
                 <HeroInnerContainer>
                 <HeroLeftContainer>
-                    <Title>Hi, I am <br/> {Bio.name}</Title>
-                    <TextLoop>I am a 
+                  <motion.div {...headTextAnimation}>
+                  <Title>Hi, I am <br/> {Bio.name}</Title>
+                  <TextLoop>I am a 
                         <Span>
                             <Typewriter
                             options={{
@@ -229,14 +237,22 @@ const Hero = () => {
                             />
                         </Span>
                     </TextLoop>
+                    </motion.div>
+
+                    <motion.div {...headContentAnimation}>
                     <SubTitle>{Bio.description}</SubTitle>
-                    <ResumeButton>Resume</ResumeButton>
+                    </motion.div>
+
+                    <ResumeButton  href={Bio.resume} target="_blank" rel="noopener noreferrer">Resume</ResumeButton>
+      
                 </HeroLeftContainer>
 
                 <HeroRightContainer>
+                  <motion.div {...headContentAnimation}>
                     <Tilt>
                     <Img src={HeroImg} alt="Shikha Singh Thakur" />
                     </Tilt>
+                    </motion.div>
                       
                 </HeroRightContainer>
                 </HeroInnerContainer>
@@ -246,4 +262,4 @@ const Hero = () => {
     </div>
 };
 
-export default Hero
+export default Hero;
