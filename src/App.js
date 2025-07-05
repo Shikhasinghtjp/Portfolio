@@ -5,6 +5,10 @@ import { BrowserRouter } from "react-router-dom";
 import Hero from "./components/section/Hero";
 import Skills from "./components/section/Skills";
 import Experience from "./components/section/Experience";
+import Education from "./components/section/Education";
+import Projects from "./components/section/Projects";
+import Contact from "./components/section/Contact";
+import Footer from "./components/section/Footer";
 
 const Body = styled.div`
 background-color: ${({theme}) => theme.bg};
@@ -23,10 +27,10 @@ function App() {
             <Hero/>
             <Skills/>
             <Experience/>
-            {/* <Education/>
+            <Education/>
             <Projects/>
             <Contact/>
-            <Footer/> */}
+            <Footer/> 
          </Body>
       </BrowserRouter>
       
