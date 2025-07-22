@@ -132,15 +132,15 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
+        "service_kq7crpd",
+        "template_7oljher",
         form.current,
-        "SybVGsYS52j2TfLbi"
+        "S7M4BQP5ruF6g54wZz"
       )
       .then(
         (result) => {
           alert("Message Sent");
-          form.current.resut();
+          form.current.reset();
         },
         (error) => {
           alert(error);
