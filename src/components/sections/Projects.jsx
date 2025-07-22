@@ -104,8 +104,7 @@ const Projects = ({ openModal, setOpenModal }) => {
             marginBottom: "40px",
           }}
         >
-          I have worked on a wide range of projects. From web apps to android
-          apps. Here are some of my projects.
+          Here are some of my projects.
         </Desc>
         <ToggleButtonGroup>
           <ToggleButton
@@ -115,26 +114,6 @@ const Projects = ({ openModal, setOpenModal }) => {
             ALL
           </ToggleButton>
           <Divider />
-          <ToggleButton
-            active={toggle === "web app"}
-            onClick={() => setToggle("web app")}
-          >
-            WEB APP"S
-          </ToggleButton>
-          <Divider />
-          <ToggleButton
-            active={toggle === "android app"}
-            onClick={() => setToggle("android app")}
-          >
-            ANDROID APP'S
-          </ToggleButton>
-          <Divider />
-          <ToggleButton
-            active={toggle === "machine learning"}
-            onClick={() => setToggle("machine learning")}
-          >
-            MACHINE LEARNING
-          </ToggleButton>
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === "all" &&
@@ -145,7 +124,7 @@ const Projects = ({ openModal, setOpenModal }) => {
                 setOpenModal={setOpenModal}
               />
             ))}
-          {projects
+          {/* {projects
             .filter((item) => item.category === toggle)
             .map((project) => (
               <ProjectCard
@@ -153,7 +132,7 @@ const Projects = ({ openModal, setOpenModal }) => {
                 openModal={openModal}
                 setOpenModal={setOpenModal}
               />
-            ))}
+            ))} */}
         </CardContainer>
       </Wrapper>
     </Container>
