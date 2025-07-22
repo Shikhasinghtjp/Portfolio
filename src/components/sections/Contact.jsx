@@ -135,16 +135,20 @@ const Contact = () => {
         "service_kq7crpd",
         "template_7oljher",
         form.current,
-        "S7M4BQP5ruF6g54wZz"
+        "7M4BQP5ruF6g54wZz"
       )
       .then(
         (result) => {
           alert("Message Sent");
-          form.current.reset();
+          console.log("EmailJS Response:", result.text);
+
         },
+        
         (error) => {
-          alert(error);
+            console.log("EmailJS Error:", error);
+            alert("Failed to send message. Please try again.");
         }
+    
       );
   };
 
@@ -156,7 +160,7 @@ const Contact = () => {
         <Desc>
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        <ContactForm onSubmit={handleSubmit}>
+        <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
