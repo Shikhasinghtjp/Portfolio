@@ -222,7 +222,7 @@ export const Bio = {
       title: "Portfolio Website",
       date: "July 2025",
       description:
-        "A minimalist Todo list web app built with HTML, CSS, and vanilla JavaScript. It supports task creation, completion, deletion, and auto-saves data using localStorage. Designed with a responsive layout for seamless usability across devices.",
+        "IN progress..",
       image:
         "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
       tags: ["JavaScript", "FrontendProject", "HTML", "CSS","BeginnerFriendly" ],
