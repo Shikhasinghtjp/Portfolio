@@ -1,7 +1,8 @@
 export const Bio = {
     name: "Shikha Singh Thakur",
     roles: [
-      "Full Stack Web Developer",
+      "Full Stack  Developer",
+      "MERN Stack Developer",
       "Programmer",
       "Aspiring Data Scientist",
     ],
@@ -9,7 +10,7 @@ export const Bio = {
       "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
     github: "https://github.com/Shikhasinghtjp",
     resume:
-       "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",
+       "https://drive.google.com/file/d/1zX9Xa7xCFy43clVjQX0JOWK8pHHBRsP5/view?usp=drive_link",
     linkedin: "https://www.linkedin.com/in/shikha-singh-thakur-07210a211/",
   };
   
@@ -135,7 +136,7 @@ export const Bio = {
         "MongoDB",
         "Postman"
       ],
-      // doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
+       doc: "https://drive.google.com/file/d/1ab0beW3A8ppIHWWVI2zqawvf9zQQOxej/view?usp=drive_link",
     },
     
   ];
@@ -185,7 +186,7 @@ export const Bio = {
       description:
         "Developed a dynamic React + Vite application styled with Tailwind CSS, integrating TMDB API to fetch and display movie data, implement search, and render responsive, animated UI components.",
       image:
-        "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+        "https://drive.google.com/file/d/1sHh-qOSUuOLcp2pT3MBx_B2MNGrMrlTy/view?usp=drive_link",
       tags: ["React Js", "Tailwind CSS", "TMDB API"],
       category: "web app",
       github: "https://github.com/Shikhasinghtjp/Movie",
@@ -198,7 +199,7 @@ export const Bio = {
       description:
         "Rock Paper Scissor Game – A classic game reimagined using HTML, CSS, and JavaScript. This project showcases my front-end development skills with a responsive design, dynamic score tracking, and interactive UI. Players can challenge a computer opponent in real time, with smooth animations and instant feedback on each move.",
       image:
-        "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+        "https://drive.google.com/file/d/14uPbhf8sTmW2ALGiVIUQiQa5bi6BdCh9/view?usp=drive_link",
       tags: ["HTML", "CSS", "JavaScript", "GameDevelopment", "FrontendProject", "ResponsiveDesign", "MiniProject"],
       category: "web app",
       github: "https://github.com/Shikhasinghtjp/rock_paper_scissor",
@@ -211,7 +212,7 @@ export const Bio = {
       description:
         "A minimalist Todo list web app built with HTML, CSS, and vanilla JavaScript. It supports task creation, completion, deletion, and auto-saves data using localStorage. Designed with a responsive layout for seamless usability across devices.",
       image:
-        "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+        "https://drive.google.com/file/d/1JpNGJ7U8J4l-TrdEJ8EokJSId5CrGQlD/view?usp=drive_link",
       tags: ["JavaScript", "FrontendProject", "HTML", "CSS","BeginnerFriendly" ],
       category: "web app",
       github: "https://github.com/Shikhasinghtjp/Todo-App",
@@ -224,7 +225,7 @@ export const Bio = {
       description:
         "IN progress..",
       image:
-        "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+        "https://drive.google.com/file/d/1l_HqmEBONKb_C5Ux6ioEFKWL2yk-sQi_/view?usp=drive_link",
       tags: ["JavaScript", "FrontendProject", "HTML", "CSS","BeginnerFriendly" ],
       category: "web app",
       github: "https://github.com/Shikhasinghtjp/Portfolio",
